@@ -3,8 +3,9 @@ import os
 
 with open('recipes.txt', encoding='utf-8') as file:
     cook_book = {}
-    ingredients = []
+
     for k in file:
+        ingredients = []
         recepie_name = k.strip()
         #print(recepie_name)
         ingredients_count = file.readline()
